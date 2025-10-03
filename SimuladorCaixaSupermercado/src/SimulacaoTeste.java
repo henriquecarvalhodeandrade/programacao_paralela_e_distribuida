@@ -32,8 +32,8 @@ public class SimulacaoTeste {
             mediasAtendimento.add(simulador.simular());
         }
 
-        double media = Estatisticas.media(mediasAtendimento);
-        double dp = Estatisticas.desvioPadrao(mediasAtendimento, media);
+        double media = Calculo.media(mediasAtendimento);
+        double dp = Calculo.desvioPadrao(mediasAtendimento, media);
 
         System.out.printf("Caixas: %d | µ = %.2f | σ = %.2f -> Média: %.3f min | DP: %.3f min%n",
                 caixas, mu, sigma, media, dp);
